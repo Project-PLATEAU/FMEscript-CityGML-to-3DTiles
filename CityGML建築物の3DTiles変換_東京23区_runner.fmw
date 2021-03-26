@@ -1,0 +1,754 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files\FME 2020.2\fme.exe" "C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\20210205_CityGML都市モデル変換\東京23区+八王子（南大沢）\CityGML建築物の3DTiles変換_東京23区_runner.fmw"
+#              --MESHCODE_LIST_CSV_FOLDER "C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\20210205_CityGML都市モデル変換\東京23区+八王子（南大沢）\resources\地域別メッシュコードリスト\東京23区"
+#              --CITYCML_BLDG_FOLDER "C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\05_citygml\東京23区+八王子（南大沢）\20210215_東京23区データ更新\13100_東京23区\udx\bldg"
+#              --STANDARD_CODELIST_FOLDER "C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\20210205_CityGML都市モデル変換\東京23区+八王子（南大沢）\resources\標準製品仕様_コードリスト"
+#              --CUSTOM_CODELIST_FOLDER "C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\05_citygml\東京23区+八王子（南大沢）\20210215_東京23区データ更新\13100_東京23区\codelists"
+#              --BLDG_SCHEMA_XLSXR "C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\20210205_CityGML都市モデル変換\東京23区+八王子（南大沢）\resources\スキーマ定義\20210128_東京23区3DTiles建物属性.xlsx"
+#              --DEST_FOLDER_CESIUM3DTILES "C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\20210205_CityGML都市モデル変換\東京23区+八王子（南大沢）\20210216_東京23区変換結果"
+#              --LOG_FOLDER "C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\20210205_CityGML都市モデル変換\東京23区+八王子（南大沢）\logs_20210216"
+#              --MAX_PROC "6"
+#    
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="2052.39 89.5"
+#!   DOC_TOP_LEFT="-2179.4 -697.881"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="20817"
+#!   FME_DOCUMENT_GUID="4e42b72e-1bad-46b6-86e1-9e477dff8b20"
+#!   FME_DOCUMENT_PRIORGUID="f094126b-486b-4428-bbdd-819479ca446f,937d1155-5fd8-4d15-92a8-9ae23a47dbce,6216932a-4140-4357-b24f-d266e9db3202,f56cbf89-7b5c-4fb3-8f74-d9e706ba0bf6,33a83c87-b24b-4d3a-8cd4-0a5c7467f829,e8af7255-2ee5-4310-8cfa-7e63f89243b7,8c0eeb04-bd05-4086-82c9-c4ae8d6776eb,4f7733ea-35c8-4c92-b457-91249a24831f,75e0aa21-c685-4f8a-9f5c-65e58b770acc,e4e9780b-ac7d-416f-b3f0-bb37047b6f9e,648c7c93-1932-404c-ada8-d608fc7a973d,92fb5428-54a1-488f-9f49-7575dea5dc00,5df24fe3-20b0-4c66-8d18-66d506045363,4e0451ed-7b4f-48f6-93ab-7888cdc257ca,630434ae-ed6b-4352-b968-a481ecafa0ea,8b616a83-628c-4716-8d4e-890b0822b32d,bad8d915-c62e-42a0-9ca1-cd1bb9bfa229,e5979a6e-0e27-48e5-94b9-63b3ed752b38,6ef84793-c97e-4dcb-8c05-75c8d3d316db,344d83d4-2d85-4b7c-86ba-b01a51b97024"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2020.2.2.0 (20210111 - Build 20817 - WIN64)"
+#!   LAST_SAVE_DATE="2021-03-26T10:24:28"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="37"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-3312.53 197.919"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="PATH"
+#!   DATASET="$(MESHCODE_LIST_CSV_FOLDER)"
+#!   KEYWORD="PATH_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="false"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="multi_reader_full_id number(11,0) fme_start_angle number(31,15) fme_rotation number(31,15) fme_primary_axis number(31,15) fme_basename char(50) path_geom char(13) multi_reader_type char(50) fme_geometry char(50) fme_type char(50) multi_reader_keyword char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_text_string char(50) multi_reader_id number(11,0) fme_text_size number(31,15) fme_secondary_axis number(31,15) fme_fill_color char(50) fme_sweep_angle number(31,15)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DIRONLY"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="20787"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="PATH"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Specify the Folder or Files pathnames"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="PATH"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="PATH"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="PATH"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="path_none"
+#!   POSITION="-2179.3969939699391 -626.88126881268818"
+#!   BOUNDING_RECT="-2179.3969939699391 -626.88126881268818 454 71"
+#!   ORDER="500000000000009"
+#!   COLLAPSED="true"
+#!   KEYWORD="PATH_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_unix" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_windows" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_rootname" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_filename" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_extension" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_filesize" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_ownername" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_readonly" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_modified_date" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_created_date" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_accessed_date" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_directory_unix" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_directory_windows" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_type" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="PATH_1"
+#!   OVERRIDE="-PATH_1_DATASET"
+#!   DATASET="PATH_1/東京23区"
+#! />
+#! </READER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIDIR MESHCODE_LIST_CSV_FOLDER 地域別メッシュコードリスト（CSV）フォルダー:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)resources\地域別メッシュコードリスト\東京23区"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIDIR_OR_ATTR CITYCML_BLDG_FOLDER CityGML建築物データフォルダー:"
+#!   DEFAULT_VALUE="C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\05_citygml\東京23区+八王子（南大沢）\20210215_東京23区データ更新\13100_東京23区\udx\bldg"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIDIR_OR_ATTR STANDARD_CODELIST_FOLDER 標準コードリスト（XML）保存先フォルダー:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)resources\標準製品仕様_コードリスト"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIDIR_OR_ATTR CUSTOM_CODELIST_FOLDER カスタムコードリスト（XML）保存先フォルダー:"
+#!   DEFAULT_VALUE="C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\05_citygml\東京23区+八王子（南大沢）\20210215_東京23区データ更新\13100_東京23区\codelists"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE_OR_ATTR BLDG_SCHEMA_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* 建築物スキーマ定義テーブル（Excel）:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)resources\スキーマ定義\20210128_東京23区3DTiles建物属性.xlsx"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME_OR_ATTR DEST_FOLDER_CESIUM3DTILES 3DTiles出力先フォルダー:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)20210216_東京23区変換結果"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME_SRC_OR_ATTR LOG_FOLDER ログファイル出力先フォルダー:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)logs_20210216"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL RANGE_SLIDER MAX_PROC 1%MAX Maximum Number of Concurrent FME Processes (1-7):"
+#!   DEFAULT_VALUE="6"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="WorkspaceRunner"
+#!   VERSION="3"
+#!   POSITION="-625.0062500625005 -626.88126881268818"
+#!   BOUNDING_RECT="-625.0062500625005 -626.88126881268818 498.00106825772946 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20817"
+#! >
+#!     <OUTPUT_FEAT NAME="SUCCEEDED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_log_file" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_unix" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_extension" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_filesize" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_ownername" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_readonly" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_modified_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_created_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_accessed_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_unix" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_log_file" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_unix" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_extension" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_filesize" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_ownername" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_readonly" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_modified_date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_created_date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_accessed_date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_unix" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_failure_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="SUMMARY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_proc_count" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_processes{}" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="BLOCKING" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LAST_KNOWN_PARAM_DEFS" PARM_VALUE="GUI&lt;space&gt;MULTIDIR&lt;space&gt;SOURCE_CITYGML_BLD_FOLDER&lt;space&gt;CityGML&lt;u5efa&gt;&lt;u7bc9&gt;&lt;u7269&gt;&lt;u30c7&gt;&lt;u30fc&gt;&lt;u30bf&gt;&lt;u30d5&gt;&lt;u30a9&gt;&lt;u30eb&gt;&lt;u30c0&gt;&lt;u30fc&gt;: GUI&lt;space&gt;MULTIFILE&lt;space&gt;MESHCODE_LIST_CSV&lt;space&gt;CSV&lt;solidus&gt;Compressed_CSV&lt;solidus&gt;TEXT_Files&lt;openparen&gt;*.csv&lt;semicolon&gt;*.gz&lt;semicolon&gt;*.txt&lt;closeparen&gt;|*.csv&lt;semicolon&gt;*.gz&lt;semicolon&gt;*.txt|CSV_Files&lt;openparen&gt;*.csv&lt;closeparen&gt;|*.csv|Compressed_CSV_Files&lt;openparen&gt;*.gz&lt;closeparen&gt;|*.gz|Text_Files&lt;openparen&gt;*.txt&lt;closeparen&gt;|*.txt|Compressed_Files&lt;openparen&gt;*.bz2&lt;semicolon&gt;*.gz&lt;closeparen&gt;|*.bz2&lt;semicolon&gt;*.gz|Archive_Files&lt;openparen&gt;*.7z&lt;semicolon&gt;*.7zip&lt;semicolon&gt;*.rar&lt;semicolon&gt;*.rvz&lt;semicolon&gt;*.tar&lt;semicolon&gt;*.tar.bz2&lt;semicolon&gt;*.tar.gz&lt;semicolon&gt;*.tgz&lt;semicolon&gt;*.zip&lt;semicolon&gt;*.zipx&lt;closeparen&gt;|*.7z&lt;semicolon&gt;*.7zip&lt;semicolon&gt;*.rar&lt;semicolon&gt;*.rvz&lt;semicolon&gt;*.tar&lt;semicolon&gt;*.tar.bz2&lt;semicolon&gt;*.tar.gz&lt;semicolon&gt;*.tgz&lt;semicolon&gt;*.zip&lt;semicolon&gt;*.zipx|All_Files|*&lt;space&gt;&lt;u5bfe&gt;&lt;u8c61&gt;&lt;u5730&gt;&lt;u57df&gt;&lt;u306e&gt;3&lt;u6b21&gt;&lt;u30e1&gt;&lt;u30c3&gt;&lt;u30b7&gt;&lt;u30e5&gt;&lt;u30b3&gt;&lt;u30fc&gt;&lt;u30c9&gt;&lt;u30ea&gt;&lt;u30b9&gt;&lt;u30c8&gt;&lt;uff08&gt;CSV&lt;uff09&gt;: GUI&lt;space&gt;MULTIDIR&lt;space&gt;STANDARD_CODELIST_FOLDER&lt;space&gt;&lt;u6a19&gt;&lt;u6e96&gt;&lt;u30b3&gt;&lt;u30fc&gt;&lt;u30c9&gt;&lt;u30ea&gt;&lt;u30b9&gt;&lt;u30c8&gt;&lt;uff08&gt;XML&lt;uff09&gt;&lt;u4fdd&gt;&lt;u5b58&gt;&lt;u5148&gt;&lt;u30d5&gt;&lt;u30a9&gt;&lt;u30eb&gt;&lt;u30c0&gt;&lt;u30fc&gt;: GUI&lt;space&gt;MULTIDIR&lt;space&gt;CUSTOM_CODELIST_FOLDER&lt;space&gt;&lt;u30ab&gt;&lt;u30b9&gt;&lt;u30bf&gt;&lt;u30e0&gt;&lt;u30b3&gt;&lt;u30fc&gt;&lt;u30c9&gt;&lt;u30ea&gt;&lt;u30b9&gt;&lt;u30c8&gt;&lt;uff08&gt;XML&lt;uff09&gt;&lt;u4fdd&gt;&lt;u5b58&gt;&lt;u5148&gt;&lt;u30d5&gt;&lt;u30a9&gt;&lt;u30eb&gt;&lt;u30c0&gt;&lt;u30fc&gt;: GUI&lt;space&gt;MULTIFILE&lt;space&gt;SCHEMA_DEFINITION_EXCEL&lt;space&gt;Excel_Files&lt;openparen&gt;*.xlsx&lt;semicolon&gt;*.xlsm&lt;semicolon&gt;*.xls&lt;closeparen&gt;|*.xlsx&lt;semicolon&gt;*.xlsm&lt;semicolon&gt;*.xls|Excel_Workbook_2007&lt;openparen&gt;*.xlsx&lt;closeparen&gt;|*.xlsx|Excel_Macro_Workbook&lt;openparen&gt;*.xlsm&lt;closeparen&gt;|*.xlsm|Excel_Workbook_Pre_2007&lt;openparen&gt;*.xls&lt;closeparen&gt;|*.xls|Compressed_Files&lt;openparen&gt;*.bz2&lt;semicolon&gt;*.gz&lt;closeparen&gt;|*.bz2&lt;semicolon&gt;*.gz|Archive_Files&lt;openparen&gt;*.7z&lt;semicolon&gt;*.7zip&lt;semicolon&gt;*.rar&lt;semicolon&gt;*.rvz&lt;semicolon&gt;*.tar&lt;semicolon&gt;*.tar.bz2&lt;semicolon&gt;*.tar.gz&lt;semicolon&gt;*.tgz&lt;semicolon&gt;*.zip&lt;semicolon&gt;*.zipx&lt;closeparen&gt;|*.7z&lt;semicolon&gt;*.7zip&lt;semicolon&gt;*.rar&lt;semicolon&gt;*.rvz&lt;semicolon&gt;*.tar&lt;semicolon&gt;*.tar.bz2&lt;semicolon&gt;*.tar.gz&lt;semicolon&gt;*.tgz&lt;semicolon&gt;*.zip&lt;semicolon&gt;*.zipx|All_files&lt;openparen&gt;*&lt;closeparen&gt;|*&lt;space&gt;&lt;u5efa&gt;&lt;u7bc9&gt;&lt;u7269&gt;&lt;u30b9&gt;&lt;u30ad&gt;&lt;u30fc&gt;&lt;u30de&gt;&lt;u5b9a&gt;&lt;u7fa9&gt;&lt;u30c6&gt;&lt;u30fc&gt;&lt;u30d6&gt;&lt;u30eb&gt;&lt;uff08&gt;Excel&lt;uff09&gt;: GUI&lt;space&gt;DIRNAME&lt;space&gt;DEST_3DTILES_FOLDER&lt;space&gt;3DTiles&lt;u51fa&gt;&lt;u529b&gt;&lt;u5148&gt;&lt;u30d5&gt;&lt;u30a9&gt;&lt;u30eb&gt;&lt;u30c0&gt;&lt;u30fc&gt;: GUI&lt;space&gt;TEXT_OR_ATTR&lt;space&gt;DEST_3DTILESET_NAME&lt;space&gt;3DTiles&lt;u30bf&gt;&lt;u30a4&gt;&lt;u30eb&gt;&lt;u30bb&gt;&lt;u30c3&gt;&lt;u30c8&gt;&lt;u540d&gt;: GUI&lt;space&gt;OPTIONAL&lt;space&gt;FILENAME&lt;space&gt;LOG_FILE&lt;space&gt;Log_Files_&lt;openparen&gt;*.log&lt;closeparen&gt;|*.log|All_Files_&lt;openparen&gt;*.*&lt;closeparen&gt;|*.*&lt;space&gt;Log&lt;space&gt;File:"/>
+#!     <XFORM_PARM PARM_NAME="MAX_PROC" PARM_VALUE="$(MAX_PROC)"/>
+#!     <XFORM_PARM PARM_NAME="MAX_TO_BATCH" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_TYPES" PARM_VALUE="MULTIDIR,MULTIFILE,MULTIDIR,MULTIDIR,MULTIFILE,DIRNAME,TEXT,FILENAME"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WORKSPACE_FILE" PARM_VALUE="$(FME_MF_DIR)CityGML建築物の3DTiles変換_東京23区.fmw"/>
+#!     <XFORM_PARM PARM_NAME="WORKSPACE_PARAMETERS" PARM_VALUE="SOURCE_CITYGML_BLD_FOLDER,$(CITYCML_BLDG_FOLDER),MESHCODE_LIST_CSV,$(MESHCODE_LIST_CSV_FOLDER),STANDARD_CODELIST_FOLDER,$(STANDARD_CODELIST_FOLDER),CUSTOM_CODELIST_FOLDER,$(CUSTOM_CODELIST_FOLDER),SCHEMA_DEFINITION_EXCEL,$(BLDG_SCHEMA_XLSXR),DEST_3DTILES_FOLDER,$(DEST_FOLDER_CESIUM3DTILES),DEST_3DTILESET_NAME,&lt;at&gt;Value&lt;openparen&gt;path_rootname&lt;closeparen&gt;,LOG_FILE,&lt;at&gt;Value&lt;openparen&gt;_log_file&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="WS_PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="WorkspaceRunner"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="-1425.1397313973139 -608.38126881268818"
+#!   BOUNDING_RECT="-1425.1397313973139 -608.38126881268818 454 71"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20817"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_log_file" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_unix" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_extension" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_filesize" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_ownername" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_readonly" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_modified_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_created_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_accessed_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_unix" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _log_file SET_TO $(LOG_FOLDER)&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;path_rootname&lt;closeparen&gt;.log"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 37
+GUI IGNORE PATH_IN_FME_GROUP_NAMED1_PATH_1,PATH_IN_GLOB_PATTERN_PATH_1,PATH_IN_RECURSE_DIRECTORIES_PATH_1,PATH_IN_TYPE_PATH_1,PATH_IN_RETRIEVE_FILE_PROPERTIES_PATH_1,SourceDataset_PATH_1,PATH_IN_NETWORK_AUTHENTICATION_PATH_1
+DEFAULT_MACRO MESHCODE_LIST_CSV_FOLDER $(FME_MF_DIR)resources\地域別メッシュコードリスト\東京23区
+GUI MULTIDIR MESHCODE_LIST_CSV_FOLDER 地域別メッシュコードリスト（CSV）フォルダー:
+DEFAULT_MACRO CITYCML_BLDG_FOLDER C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\05_citygml\東京23区+八王子（南大沢）\20210215_東京23区データ更新\13100_東京23区\udx\bldg
+GUI MULTIDIR CITYCML_BLDG_FOLDER CityGML建築物データフォルダー:
+DEFAULT_MACRO STANDARD_CODELIST_FOLDER $(FME_MF_DIR)resources\標準製品仕様_コードリスト
+GUI MULTIDIR STANDARD_CODELIST_FOLDER 標準コードリスト（XML）保存先フォルダー:
+DEFAULT_MACRO CUSTOM_CODELIST_FOLDER C:\Users\takas\PSS Dropbox\All_Project\20200001_mri_digitaltwin\05_citygml\東京23区+八王子（南大沢）\20210215_東京23区データ更新\13100_東京23区\codelists
+GUI MULTIDIR CUSTOM_CODELIST_FOLDER カスタムコードリスト（XML）保存先フォルダー:
+DEFAULT_MACRO BLDG_SCHEMA_XLSXR $(FME_MF_DIR)resources\スキーマ定義\20210128_東京23区3DTiles建物属性.xlsx
+GUI MULTIFILE BLDG_SCHEMA_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* 建築物スキーマ定義テーブル（Excel）:
+DEFAULT_MACRO DEST_FOLDER_CESIUM3DTILES $(FME_MF_DIR)20210216_東京23区変換結果
+GUI DIRNAME DEST_FOLDER_CESIUM3DTILES 3DTiles出力先フォルダー:
+DEFAULT_MACRO LOG_FOLDER $(FME_MF_DIR)logs_20210216
+GUI DIRNAME_SRC LOG_FOLDER ログファイル出力先フォルダー:
+DEFAULT_MACRO MAX_PROC 6
+GUI OPTIONAL RANGE_SLIDER MAX_PROC 1%MAX Maximum Number of Concurrent FME Processes (1-7):
+INCLUDE [ if {{$(MESHCODE_LIST_CSV_FOLDER)} == {}} { puts_real {Parameter 'MESHCODE_LIST_CSV_FOLDER' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(CITYCML_BLDG_FOLDER)} == {}} { puts_real {Parameter 'CITYCML_BLDG_FOLDER' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(STANDARD_CODELIST_FOLDER)} == {}} { puts_real {Parameter 'STANDARD_CODELIST_FOLDER' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(CUSTOM_CODELIST_FOLDER)} == {}} { puts_real {Parameter 'CUSTOM_CODELIST_FOLDER' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(BLDG_SCHEMA_XLSXR)} == {}} { puts_real {Parameter 'BLDG_SCHEMA_XLSXR' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DEST_FOLDER_CESIUM3DTILES)} == {}} { puts_real {Parameter 'DEST_FOLDER_CESIUM3DTILES' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(LOG_FOLDER)} == {}} { puts_real {Parameter 'LOG_FOLDER' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} PATH
+MULTI_READER_KEYWORD{0} PATH_1
+MULTI_READER_GEN_DIRECTIVES{0} RECURSE_DIRECTORIES,NO,RETRIEVE_FILE_PROPERTIES,NO,EXPOSE_ATTRS_GROUP,,_MERGE_SCHEMAS,YES,NO_EMPTY_PROPERTIES,YES,PATH_EXPOSE_FORMAT_ATTRS,,TYPE,FILE,OFFSET_DATETIME,,GLOB_PATTERN,*.csv
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "PATH_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER PATH PATH_1
+DEFAULT_MACRO PATH_IN_FME_GROUP_NAMED1_PATH_1 
+GUI OPTIONAL DISCLOSUREGROUP PATH_IN_FME_GROUP_NAMED1_PATH_1 PATH_IN_GLOB_PATTERN_PATH_1%PATH_IN_RECURSE_DIRECTORIES_PATH_1%PATH_IN_TYPE_PATH_1%PATH_IN_RETRIEVE_FILE_PROPERTIES_PATH_1 Path Parameters
+# =============================================================================
+DEFAULT_MACRO PATH_IN_OFFSET_DATETIME_PATH_1 
+PATH_1_OFFSET_DATETIME "$(PATH_IN_OFFSET_DATETIME_PATH_1)"
+# =============================================================================
+DEFAULT_MACRO PATH_IN_GLOB_PATTERN_PATH_1 *.csv
+PATH_1_GLOB_PATTERN "$(PATH_IN_GLOB_PATTERN_PATH_1)"
+GUI OPTIONAL TEXT_ENCODED PATH_IN_GLOB_PATTERN_PATH_1 Path Filter:
+# =============================================================================
+DEFAULT_MACRO PATH_IN_RECURSE_DIRECTORIES_PATH_1 NO
+PATH_1_RECURSE_DIRECTORIES "$(PATH_IN_RECURSE_DIRECTORIES_PATH_1)"
+GUI CHOICE PATH_IN_RECURSE_DIRECTORIES_PATH_1 YES%NO Recurse Into Subfolders:
+# =============================================================================
+DEFAULT_MACRO PATH_IN_TYPE_PATH_1 FILE
+PATH_1_TYPE "$(PATH_IN_TYPE_PATH_1)"
+GUI LOOKUP_CHOICE PATH_IN_TYPE_PATH_1 Any,ANY%Directory,DIRECTORY%File,FILE Allowed Path Type:
+# =============================================================================
+DEFAULT_MACRO PATH_IN_RETRIEVE_FILE_PROPERTIES_PATH_1 NO
+PATH_1_RETRIEVE_FILE_PROPERTIES "$(PATH_IN_RETRIEVE_FILE_PROPERTIES_PATH_1)"
+GUI CHOICE PATH_IN_RETRIEVE_FILE_PROPERTIES_PATH_1 YES%NO Retrieve file properties:
+# =============================================================================
+DEFAULT_MACRO PATH_IN_NO_EMPTY_PROPERTIES_PATH_1 YES
+PATH_1_NO_EMPTY_PROPERTIES "$(PATH_IN_NO_EMPTY_PROPERTIES_PATH_1)"
+DEFAULT_MACRO PATH_IN_EXPOSE_ATTRS_GROUP_PATH_1 
+PATH_1_EXPOSE_ATTRS_GROUP "$(PATH_IN_EXPOSE_ATTRS_GROUP_PATH_1)"
+# =====================================================================
+# The following GUI line prompts for the folder from which to
+# read
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_PATH_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER PATH PATH_1
+DEFAULT_MACRO SourceDataset_PATH_1 $(MESHCODE_LIST_CSV_FOLDER)
+GUI MULTIDIR SourceDataset_PATH_1 Source Folder and File Pathnames Folder:
+DEFAULT_MACRO _OFFSET_DATETIME_PATH_1 yes
+PATH_1_OFFSET_DATETIME $(_OFFSET_DATETIME_PATH_1)
+# ===========================================================================
+DEFAULT_MACRO PATH_IN_NETWORK_AUTHENTICATION_PATH_1 
+PATH_1_NETWORK_AUTHENTICATION "$(PATH_IN_NETWORK_AUTHENTICATION_PATH_1)"
+GUI OPTIONAL AUTHENTICATOR PATH_IN_NETWORK_AUTHENTICATION_PATH_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================ 
+DEFAULT_MACRO PATH_IN_ATTRIBUTE_READING_PATH_1 ALL
+PATH_1_ATTRIBUTE_READING "$(PATH_IN_ATTRIBUTE_READING_PATH_1)"
+# ============================================================================ 
+PATH_1_GENERATE_FME_BUILD_NUM 20787
+PATH_1_DATASET "$(SourceDataset_PATH_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)CityGML建築物の3DTiles変換_東京23区_runner.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+DEFAULT_MACRO DATASET_KEYWORD_PATH_1 PATH_1
+# -------------------------------------------------------------------------
+
+PATH_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME CityGML建築物の3DTiles変換_東京23区_runner
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_PATH_1)   INPUT FEATURE_TYPE *    ROUTE PATH PATH_1::PATH multi_reader_keyword,$(DATASET_KEYWORD_PATH_1) TO FME_GENERIC ::PATH ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+PATH_1_MERGE_DEF PATH_1::PATH EXACT PATH
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PATH_PATH_1 Splitter"    INPUT FEATURE_TYPE PATH    OUTPUT FEATURE_TYPE PATH_PATH_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE PATH_PATH_1    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_log_file" "SET_TO" "$(LOG_FOLDER$encode)<solidus><at>Value<openparen>path_rootname<closeparen>.log" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
+# -------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+# Determine the "NULL" device so we can ensure we don't get stray output
+# messing up our stdout if we are running workspaces in the background
+# See http://wiki.tcl.tk/1649 for a description of the tcl_platform
+# variable, the "platform" part seems to have valid values windows, unix, and
+# macintosh (the latter of which is actually pre-OS X)
+# PR#83334 - On Windows when we are creating child process asynchronously
+# (BLOCKING == NO), we use FME's @System() call (FME_Execute System) ensuring
+# that the child process doesn't inherit handles from parent process. This allows
+# parent process to close feature caches and not depend on spawned processes.
+Tcl2 if { $tcl_platform(platform) == {windows} } {         set ::null_device {NUL:};         set ::__WR_ENV_HELPER__ {};         set ::__platform__ {windows};      } else {         set ::null_device {/dev/null};         set ::__WR_ENV_HELPER__ {/usr/bin/env FME_SUBPROCESS_RUN_DETACHED=1};         set ::__platform__ {unix};      };
+# ------------------------------------------------------------------------------
+# Quote parameter strings for inclusion in command file using raw strings, with
+# a tag computed to be unique within source string ${_uniq_=_sourceString_=_uniq_}
+# [FMEENGINE-62584]
+Tcl2 proc quotifyForParameterFileV3a { sourceString } {   if {[string length $sourceString] == 0} {      return {\"\"};   };   if {[regexp {[^a-zA-Z0-9_]} $sourceString]} {     set uniq {};     while {[string first [format \"=%s\}\" $uniq] $sourceString] >= 0} {       if {[catch {incr uniq}]} { set uniq 0 };     };     return [format \"$\{%s=%s=%s\}\" $uniq $sourceString $uniq];   } else {     return $sourceString;   }; };
+# ------------------------------------------------------------------------------
+# Main runner procedure, takes in a parameter list as string which is delimited
+# by \x07 (BELL) character and the workspace to run. <parmListString> consists of
+# parmeter name and value pairs. Value part is always wwjd encoded whether it is
+# literal value or resolved expression value resulting from @EvaluateExpression().
+# Each value part had to be wwjd encoded because mapping file parsing was mangling
+# the values by removing double quotes and spaces when passed in to this Tcl routine.
+Tcl2 proc WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_runner { parmListString workspaceFile } {    global WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands;    global WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_batch_count;    incr WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_batch_count 0;    if { [info exists WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands] == 0 } {       set WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands {};    };    set workspaceFileUnix [regsub -all {\\} $workspaceFile {/}];    set comment    {        Build up the command line in a list, which we'll write it out to a        parameter file.    };    set commandArguments {};    set commandArgumentsToLog {};    set workspaceToRun [quotifyForParameterFileV3a $workspaceFileUnix];    lappend commandArguments $workspaceToRun;    lappend commandArgumentsToLog $workspaceToRun;    set parameterList [split $parmListString \x07];    set parmTypes [split {MULTIDIR,MULTIFILE,MULTIDIR,MULTIDIR,MULTIFILE,DIRNAME,TEXT,FILENAME} {,}];    foreach {parmName parmValue} $parameterList {parmType} $parmTypes {      set parmValue [quotifyForParameterFileV3a [FME_DecodeText $parmValue]];      lappend commandArguments --$parmName;      lappend commandArgumentsToLog --$parmName;      lappend commandArguments $parmValue;      if { [string first {PASSWORD} $parmType] != -1 } {           lappend commandArgumentsToLog {*********};      } else {           lappend commandArgumentsToLog $parmValue;      };    };    lappend commandArguments {--FME_LAUNCH_VIEWER_APP};    lappend commandArguments {YES};    lappend WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands [join $commandArguments " "];    incr WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_batch_count;    if { {No} == {No} && {1} > 1  && $WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_batch_count <= {1} } {       FME_LogMessage fme_inform 933450 WorkspaceRunner $commandArgumentsToLog;    } else {       FME_LogMessage fme_inform 933451 WorkspaceRunner $commandArgumentsToLog;    };    if { {No} != {No} || $WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_batch_count == {1} } {       set WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_batch_count 0;       set commandFile [WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_writeCommandFile $WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands];       if { $commandFile == {} } {          return FAILURE;       };       set WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend cmdArgs {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;    } else {       return SUCCESS;    };    return [WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_runCommand $cmdArgs $workspaceFileUnix]; }
+# ------------------------------------------------------------------------------
+# When batching commands, any overflow commands will be run at the end. Say you
+# batch by 2 and there are 5 incoming features. Then we will have 2 batches with
+# 2 commands each and 1 overflow batch with 1 command
+Tcl2 proc WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_flushPending { } {    global WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands;    if { [info exists WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands] == 1 && [llength $WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands] > 0 } {       set workspaceToRun [lindex $WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands 0];       set commandFile [WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_writeCommandFile $WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands];       if { $commandFile == {} } {          return FAILURE;       };       set WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend commandArguments {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;       return [WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_runCommand $commandArguments $workspaceToRun];    };    return SUCCESS; }
+# ------------------------------------------------------------------------------
+# Build and run the command
+Tcl2 proc WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_runCommand {commandArguments workspaceFileUnix} {    if { {No} == {No} && $::__platform__ != {windows} } {       lappend commandArguments \">$::null_device\";       lappend commandArguments \"<$::null_device\";    };    set comment    {       The below 2>@1 forces any standard error output to go into the msg variable       or to NULL if we're running in the background.    };    if { {No} != {No} || $::__platform__ != {windows} } {       lappend commandArguments {2>@1};    };    if { {No} == {No} } {        lappend commandArguments {&};    };    if { {No} == {No} } {       after 1000;       while { [FME_CanSpawnFme $(MAX_PROC)] == {0} } {             after 2000;       };    };    if { No == {No} && {1} > 1 } {       FME_LogMessage fme_inform 933452 WorkspaceRunner $commandArguments;    } else {       FME_LogMessage fme_inform 933453 WorkspaceRunner $commandArguments;    };    if { $::__platform__ == {windows} && {No} == {No} } {       set comment       {          Only on Windows in non-blocking mode we convert Tcl list to string joined          by space (affectively flattening the list). Prior to this we have already          ensured that in this mode paths are always quoted.       };       set commandArguments [join $commandArguments " "];       set catchResult [catch {FME_Execute System RETURN_PID_IF_ASYNC $commandArguments} msg];    } else {       set catchResult [catch {eval [concat exec $commandArguments]} msg];    };    if { $catchResult } {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn 933454 WorkspaceRunner $workspaceFileUnix "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_process_count;       incr WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_process_count;       if { {No} == {No} } {           FME_LogMessage fme_inform 933455 WorkspaceRunner $workspaceFileUnix;           global WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_all_processes;           lappend WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_all_processes $msg;       } else {           FME_LogMessage fme_inform 933456 WorkspaceRunner $workspaceFileUnix;       };       return SUCCESS;    }; }
+# ------------------------------------------------------------------------------
+# Create and write commands to command file
+Tcl2 proc WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_writeCommandFile { commands } {    set commandFile [FME_TempFilename wsr_cm_];    if { [catch { set cmdFileId [open $commandFile "w"] } msg ] } {       FME_LogMessage fme_warn 933457 WorkspaceRunner $commandFile "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return {};    };    fconfigure $cmdFileId -encoding utf-8;    puts $cmdFileId {#! encoding=\"utf-8\"};    puts $cmdFileId DELETE_FILE_AFTER_LOAD;    foreach {command} $commands {       puts $cmdFileId $command;    };    close $cmdFileId;    return $commandFile; }
+# ------------------------------------------------------------------------------
+# Use \x07 (BELL) character as the delimiter when writing WORKSPACE_PARAMETERS
+# to mapping file
+FACTORY_DEF * TestFactory    FACTORY_NAME WorkspaceRunner_ExecutorAndRouter    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    TEST @Tcl2("WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_runner {SOURCE_CITYGML_BLD_FOLDER@EvaluateExpression(FDIV,STRING_ENCODED,$(CITYCML_BLDG_FOLDER$encode),WorkspaceRunner)MESHCODE_LIST_CSV@EvaluateExpression(FDIV,STRING_ENCODED,$(MESHCODE_LIST_CSV_FOLDER$encode),WorkspaceRunner)STANDARD_CODELIST_FOLDER@EvaluateExpression(FDIV,STRING_ENCODED,$(STANDARD_CODELIST_FOLDER$encode),WorkspaceRunner)CUSTOM_CODELIST_FOLDER@EvaluateExpression(FDIV,STRING_ENCODED,$(CUSTOM_CODELIST_FOLDER$encode),WorkspaceRunner)SCHEMA_DEFINITION_EXCEL@EvaluateExpression(FDIV,STRING_ENCODED,$(BLDG_SCHEMA_XLSXR$encode),WorkspaceRunner)DEST_3DTILES_FOLDER@EvaluateExpression(FDIV,STRING_ENCODED,$(DEST_FOLDER_CESIUM3DTILES$encode),WorkspaceRunner)DEST_3DTILESET_NAME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>path_rootname<closeparen>,WorkspaceRunner)LOG_FILE@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_log_file<closeparen>,WorkspaceRunner)} {@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR$encode)CityGML<u5efa><u7bc9><u7269><u306e>3DTiles<u5909><u63db>_<u6771><u4eac>23<u533a>.fmw,WorkspaceRunner)}") == SUCCESS    TEST @Tcl2(WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_flushPending) == SUCCESS
+Tcl2 proc WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_summarizer { } {     global WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_process_count 0;     FME_SetAttribute _proc_count [set WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_process_count];     global WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_all_processes;     if {[info exists WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_all_processes]} {         set index 0;         foreach pid [set WorkspaceRunner_24a362aa_06b2_46ca_8d8b_4620b251456a0_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
+FACTORY_DEF * CreationFactory    FACTORY_NAME WorkspaceRunner_SummaryMaker    CREATE_AT_END yes
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
